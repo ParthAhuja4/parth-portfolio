@@ -87,7 +87,7 @@ export const projects = [
   {
     id: 4,
     img: carousel,
-    link: "hhttps://image-carousel-lake.vercel.app/",
+    link: "https://image-carousel-lake.vercel.app/",
     category: "Development",
     title: "Image Carousel",
     description:
