@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: hsl(165, 60%, 40%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 92%);
+  --bg-color: hsl(216, 18%, 16%);
+  --bg-color-alt: hsl(213, 10%, 21%);
+  --container-color: hsl(217, 18%, 14%);
+  --border-color: hsl(210, 2%, 65%);
+  --first-gradient: linear-gradient(
+    0deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color) 100%
+  );
+  --second-gradient: linear-gradient(
+    180deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color) 100%
+  );
+  --third-gradient: linear-gradient(
+    180deg,
+    var(--bg-color) 0%,
+    var(--bg-color) 100%
+  );
+
+  --body-font: "Jost", sans-serif;
+  --second-font: "Caveat", sans-serif;
+  --biggest-font-size: 90px;
+  --h1-font-size: 44px;
+  --h2-font-size: 30px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --largest-font-size: 21px;
+  --larger-font-size: 20px;
+  --large-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 15px;
+  --smaller-font-size: 14px;
+  --tiny-font-size: 13px;
+
+  --shadow: 5px 5px rgb(255 255 255 /10%);
+
+  --transition: cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3 {
+  columns: var(--title-color);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+.text-cs {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bttn,
+.hero_link {
+  color: var(--title-color);
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.bttn {
+  border: 2px solid var(--border-color);
+  padding-inline: 40px;
+  border-radius: 56px;
+  box-shadow: var(--shadow);
+}
+
+.bttn::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background-color: var(--primary-color);
+  transform: scale(0.3);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 0.5s var(--transition);
+  z-index: -1;
+}
+
+.bttn:hover::before {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.section {
+  padding-bottom: 220px;
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+.section_title {
+  font-size: var(--h1-font-size);
+}
+
+.section_subtitle {
+  font-family: var(--second-font);
+  color: var(--primary-color);
+  font-size: var(--h2-font-size);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section_subtitle span {
+  font-family: var(--second-font);
+  color: var(--primary-color);
+  font-size: var(--h2-font-size);
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color: var(--container-color);
+  overflow: hidden;
+  text-align: left;
+}
+.card-one {
+  padding: 30px 35px;
+  border-radius: 18px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+.link_icon {
+  color: var(--primary-color);
+  margin-left: 20px;
+  transition: all 0.3s var(--transition);
+}
+
+.link:hover,
+.link-icon {
+  margin-left: 15px;
+}
+
+.dark-theme .shape {
+  filter: invert(1);
+  opacity: 0.3;
+}
+.shape {
+  position: absolute;
+  opacity: 0.5;
+  height: 150px;
+  width: 150px;
+  right: -30px;
+  bottom: -30px;
+}
+
+.card {
+  background-color: var(--container-color);
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+
+.card-one {
+  padding: 30px 35px;
+  border-radius: 18px;
+}
+
+.card-two {
+  padding: 20px;
+  background-repeat: 20px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.light-theme {
+  --title-color: #000;
+  --text-color: #262626;
+  --bg-color: #f0ebe3;
+  --bg-color-alt: #fff;
+  --container-color: #fff;
+  --border-color: #000;
+
+  --shadow: 5px 5px rgb(0 0 0 / 20%);
+}

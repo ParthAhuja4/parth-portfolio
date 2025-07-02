@@ -1,0 +1,149 @@
+.home {
+  background-color: var(--first-gradient);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home_container {
+  flex: 1 1 500px;
+  width: 100%;
+  position: relative;
+}
+
+.home_subtitle,
+.home_job {
+  font-weight: 700;
+}
+
+.home_subtitle,
+.home_job span {
+  font-size: var(--big-font-size);
+  color: var(--title-color);
+}
+
+.home_subtitle span,
+.home_title span {
+  color: var(--primary-color);
+}
+
+.home_job b {
+  font-family: var(--second-font);
+  font-size: var(--h1-font-size);
+  margin-left: 10px;
+}
+
+.home_title {
+  font-size: var(--biggest-font-size);
+  text-shadow:
+    2px 2px hsl(0, 0%, 0%),
+    -2px -2px hsl(0, 0%, 0%),
+    2px -2px hsl(0, 0%, 0%),
+    -2px -2px hsl(0, 0%, 0%),
+    5px 5px 0 rgb(0, 0, 0 /20%);
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
+.home_text {
+  font-size: var(--large-font-size);
+  font-weight: 500;
+  margin-block: 40px 28px;
+}
+
+.home_socials {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.home_social-link {
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  transition: all 0.5s var(--transition);
+}
+
+.home_social-link:hover {
+  color: var(--primary-color);
+}
+
+.home_bttns {
+  display: flex;
+  column-gap: 70px;
+  align-items: center;
+  height: 56px;
+}
+.content {
+  margin: 10vh 6vw 10vh 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.home_img-wrapper {
+  flex: 1 1 400px;
+  position: relative;
+  max-width: 500px;
+}
+
+.home_banner {
+  background-color: var(--primary-color);
+  padding-bottom: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.home_profile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 500px;
+  object-fit: cover;
+  z-index: 2;
+}
+.home_banner {
+  position: relative;
+  background-color: var(--primary-color);
+  padding-bottom: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.home_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#00b7ff, #ff30ff, #00b7ff);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 7px),
+    white calc(100% - 7px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 7px),
+    white calc(100% - 7px)
+  );
+  animation: rotateBorder 2s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.home_profile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+@keyframes rotateBorder {
+  to {
+    transform: rotate(1turn);
+  }
+}
