@@ -59,7 +59,7 @@ export const t_skills = [
 export const projects = [
   {
     id: 1,
-    link: "https://github.com/ParthAhuja4/VANILLA_JS_PROJECTS",
+    link: "https://flip-and-match-seven.vercel.app/",
     img: flip,
     category: "Development",
     title: "FLIP & MATCH",
@@ -69,7 +69,7 @@ export const projects = [
   {
     id: 2,
     img: tic,
-    link: "https://github.com/ParthAhuja4/VANILLA_JS_PROJECTS",
+    link: "https://tic-tac-toe-two-mocha-15.vercel.app/",
     category: "Development",
     title: "TIC-TAC-TOE",
     description:
@@ -87,7 +87,7 @@ export const projects = [
   {
     id: 4,
     img: carousel,
-    link: "https://github.com/ParthAhuja4/VANILLA_JS_PROJECTS",
+    link: "hhttps://image-carousel-lake.vercel.app/",
     category: "Development",
     title: "Image Carousel",
     description:
