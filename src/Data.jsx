@@ -3,6 +3,7 @@ import carousel from "../src/assets/IMAGE-CAROUSEL.gif";
 import quote from "../src/assets/QUOTE-GENERATOR.gif";
 import tic from "../src/assets/TIC-TAC-TOE.gif";
 import ai from "../src/assets/ai.gif";
+import visto from "../src/assets/vistyo.gif";
 export const t_skills = [
   {
     id: 1,
@@ -33,7 +34,7 @@ export const t_skills = [
     name: "React",
     description:
       "Engineer scalable, component-based interfaces using hooks, custom logic, and clean state management; confidently integrate third-party libraries like React Hook Form, TinyMCE, React Router and many more to handle complex forms, rich text editing, UI animations, and seamless routing with precision.",
-    link: "https://drive.google.com/file/d/1G6hHKMFgAYglyJ9KR2HoKknRK6KD3Wni/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1ORqr4OnvnbZSD6m4KEn5IRfQmMkdonzV/view?usp=drive_link",
   },
 
   {
@@ -41,42 +42,43 @@ export const t_skills = [
     name: "Git & Github",
     description:
       "Drive clean, maintainable codebases with disciplined version control, strategic branching, and efficient collaboration through pull requests, reviews, and issue tracking.",
+    link: "https://github.com/ParthAhuja4/vistyo",
   },
 
   {
     id: 6,
     name: "Tailwind CSS",
     description:
-      "Currently learning and applying utility-first styling to build responsive layouts and streamline UI development with consistent, scalable design patterns.",
+      "Currently applying utility-first styling to build responsive layouts and streamline UI development with consistent, scalable design patterns.",
+    link: "https://github.com/ParthAhuja4/vistyo",
   },
   {
     id: 7,
     name: "API Integration & Backend Services",
     description:
       "Fluent in working with Fetch API to integrate RESTful services through clean, asynchronous logic. Actively using Appwrite to handle authentication, database management, and serverless backend operations within modern web applications.",
+    link: "https://github.com/ParthAhuja4/vistyo",
+  },
+  {
+    id: 8,
+    name: "Stripe Payments & Webhooks",
+    description:
+      "Experienced in implementing secure, production-ready payment flows using Stripe Checkout. Proficient in handling webhook events for subscription lifecycle management, including plan upgrades, downgrades, and automated database updates.",
+    link: "https://github.com/ParthAhuja4/vistyo",
   },
 ];
 export const projects = [
   {
     id: 1,
-    link: "https://flip-and-match-seven.vercel.app/",
-    img: flip,
+    link: "https://vistyo.vercel.app/",
+    img: visto,
     category: "Development",
-    title: "FLIP & MATCH",
+    title: "VISTYO- AI SAAS",
     description:
-      "An interactive 4x4 memory card game featuring randomized symbol pairs, real-time match detection, and animated flip logic. Implements a robust game loop with auto-restart functionality and optimized shuffle using the Fisher-Yates algorithm.",
+      "An AI-native SaaS platform architected to override YouTube's algorithmic noise with backend-enforced PBAC, Cohere-powered semantic query filtering, and serverless business logic orchestration (Appwrite Functions). Engineered on React 19, Vite, TailwindCSS, Appwrite, and Stripe Webhooks, Vistyo is built for multi-tenant SaaS scale, zero-trust client models, and backend-authoritative content gating.",
   },
   {
     id: 2,
-    img: tic,
-    link: "https://tic-tac-toe-two-mocha-15.vercel.app/",
-    category: "Development",
-    title: "TIC-TAC-TOE",
-    description:
-      "A two-player Tic Tac Toe game with real-time turn switching, comprehensive win/draw detection, and instant reset capability. Features a clean layout built with CSS Grid and Flexbox, paired with clear and maintainable JavaScript logic.",
-  },
-  {
-    id: 3,
     img: ai,
     link: "https://github.com/ParthAhuja4/CAMPUS-AI-HACKATHON-PROJECT",
     category: "Hackathon",
@@ -85,7 +87,26 @@ export const projects = [
       "An AI-driven, full-stack campus automation system integrating facial recognition-based attendance, geofencing, smart scheduling, and a student-run marketplace — all connected through a real-time Firebase backend. From automatic absentee detection and camera-enabled check-ins to interactive timetables and localized commerce, CAMPUS-PULSE offers a modular, scalable, and intuitive solution for smart campus ecosystems.",
   },
   {
+    id: 3,
+    link: "https://flip-and-match-seven.vercel.app/",
+    img: flip,
+    category: "Development",
+    title: "FLIP & MATCH",
+    description:
+      "An interactive 4x4 memory card game featuring randomized symbol pairs, real-time match detection, and animated flip logic. Implements a robust game loop with auto-restart functionality and optimized shuffle using the Fisher-Yates algorithm.",
+  },
+  {
     id: 4,
+    img: tic,
+    link: "https://tic-tac-toe-two-mocha-15.vercel.app/",
+    category: "Development",
+    title: "TIC-TAC-TOE",
+    description:
+      "A two-player Tic Tac Toe game with real-time turn switching, comprehensive win/draw detection, and instant reset capability. Features a clean layout built with CSS Grid and Flexbox, paired with clear and maintainable JavaScript logic.",
+  },
+
+  {
+    id: 5,
     img: carousel,
     link: "https://image-carousel-lake.vercel.app/",
     category: "Development",
@@ -94,7 +115,7 @@ export const projects = [
       "A fully responsive image slider with smooth, translateX-based transitions and modular indexing for infinite looping. Built with Flexbox and clean JavaScript architecture to ensure seamless user interaction and easy scalability.",
   },
   {
-    id: 5,
+    id: 6,
     img: quote,
     link: "https://github.com/ParthAhuja4/VANILLA_JS_PROJECTS",
     category: "Development",

@@ -2,6 +2,7 @@ import "./Skills.css";
 import { t_skills } from "../../Data.jsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FiExternalLink } from "react-icons/fi";
 
 function Skills() {
   const [skillsRef, skillsInView] = useInView({
@@ -46,7 +47,9 @@ function Skills() {
             >
               <a href={link} target="_blank">
                 <div className="skills_titles"></div>
-                <h3 className="skills_name">{name}</h3>
+                <h3 className="skills_name">
+                  {name} <FiExternalLink aria-label="External link" />
+                </h3>
                 <p className="skills_description">{description}</p>
               </a>
             </motion.div>

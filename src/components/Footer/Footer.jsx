@@ -1,8 +1,12 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import "./Footer.css";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { useEffect } from "react";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <div className="footer">
       <div className="footer_container container grid">
@@ -13,6 +17,13 @@ function Footer() {
             className="home_social-link"
           >
             <FaGithub />
+          </a>
+          <a
+            href="https://x.com/parthahuja006/"
+            target="_blank"
+            className="home_social-link"
+          >
+            <FaSquareXTwitter />
           </a>
           <a
             href="https://www.linkedin.com/in/parthahuja4"
@@ -31,7 +42,7 @@ function Footer() {
         </div>
 
         <div className="copyright text-cs">
-          &copy; 2025 <span>PARTH, </span> All Rights Reserved
+          &copy;{year} <span>PARTH, </span> All Rights Reserved
         </div>
 
         <div className="copyright text-cs">

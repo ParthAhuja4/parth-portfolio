@@ -3,6 +3,7 @@ import profileImg from "../../assets/Profile.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { motion } from "framer-motion";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Home() {
   return (
@@ -22,19 +23,24 @@ function Home() {
             <span>PARTH </span>AHUJA
           </h1>
           <p className="home_job">
-            <span className="text-cs">I Am</span> <b>FRONTEND WEB DEVELOPER</b>
+            <span className="text-cs">I Am</span>{" "}
+            <b>PASSIONATE WEB DEVELOPER</b>
           </p>
           <p className="home_text">
-            I engineer performant, accessible frontends with semantic HTML,
-            modern CSS (Flexbox, Grid, animations), and JavaScript—built on
-            clean, scalable architecture. React is my core framework for
-            building modular, production-grade interfaces. I integrate Redux for
-            predictable state management, Framer Motion for fluid UI animations,
-            React Hook Form for form handling, and EmailJS for email delivery
-            services. I handle API integrations confidently with the Fetch API
-            and maintain clean Git workflows with structured branching, pull
-            requests, and peer reviews. I'm currently optimizing UI velocity
-            with Tailwind CSS and expanding backend experience through Appwrite.
+            I architect performant, accessible frontends with semantic HTML5,
+            modern CSS (Flexbox, Grid, animations), and JavaScript, underpinned
+            by clean, scalable architecture principles. My primary JS library is
+            React + Vite for modular, production-grade UIs, integrated with
+            Redux for deterministic state management, Framer Motion for high-FPS
+            animations, React Hook Form for optimized form state handling,
+            EmailJS for transactional mail, and DOMPurify for XSS-safe HTML
+            sanitization. I implement robust API consumption via the Fetch API,
+            maintain disciplined Git workflows with feature branching, PR
+            reviews, and CI-friendly commits, and optimize delivery velocity
+            with Tailwind CSS. On the backend, I leverage Appwrite for
+            authentication, database operations, and serverless functions, and
+            integrate Stripe Checkout with webhook validation for secure,
+            scalable subscription management.
           </p>
           <div className="home_socials">
             <a
@@ -43,6 +49,13 @@ function Home() {
               className="home_social-link"
             >
               <FaGithub />
+            </a>
+            <a
+              href="https://x.com/parthahuja006/"
+              target="_blank"
+              className="home_social-link"
+            >
+              <FaSquareXTwitter />
             </a>
             <a
               href="https://www.linkedin.com/in/parthahuja4"

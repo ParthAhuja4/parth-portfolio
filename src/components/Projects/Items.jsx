@@ -1,5 +1,6 @@
 import shape from "../../assets/shape-2.png";
 import { motion } from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
 
 function Items({ projectItems }) {
   return (
@@ -25,7 +26,10 @@ function Items({ projectItems }) {
                 />
               </div>
               <span className="portfolio_category text-cs">{category}</span>
-              <h3 className="portfolio_title">{title}</h3>
+              <h3 className="portfolio_title">
+                {title}
+                {"  "} <FiExternalLink aria-label="External link" />
+              </h3>
               <p className="portfolio_description">{description}</p>
               <img src={shape} alt="" className="shape" />
             </a>
