@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import resume from "../../assets/Parth Ahuja Resume FrontEnd.pdf"
 
 function Home() {
   return (
@@ -73,7 +74,7 @@ function Home() {
             </a>
           </div>
           <div className="home_bttns">
-            <a href="" className="bttn text-cs">
+            <a href={resume} target="_blank" className="bttn text-cs">
               RESUME
             </a>
             <a href="#skill" className="hero_link text-cs">
