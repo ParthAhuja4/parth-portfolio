@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import resume from "../../assets/Parth Ahuja Resume FrontEnd.pdf"
+import resume from "../../assets/Parth Ahuja Resume.pdf"
 
 function Home() {
   return (
