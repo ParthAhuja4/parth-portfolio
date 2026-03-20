@@ -9,7 +9,7 @@ const allNavList = [
 ];
 const Projects = () => {
   const [projectItems, setMenuItems] = useState(projects);
-  const [navList, setCategories] = useState(allNavList);
+  const [navList] = useState(allNavList);
 
   const filterItems = (category) => {
     if (category === "all") {
@@ -17,7 +17,7 @@ const Projects = () => {
       return;
     }
     const newProjectItems = projects.filter(
-      (item) => item.category === category
+      (item) => item.category === category,
     );
     setMenuItems(newProjectItems);
   };

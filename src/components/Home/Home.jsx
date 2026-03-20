@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import resume from "../../assets/Parth Ahuja Resume.pdf"
+import resume from "../../assets/Parth_Ahuja_Resume.pdf";
 
 function Home() {
   return (
@@ -28,20 +28,29 @@ function Home() {
             <b>PASSIONATE WEB DEVELOPER</b>
           </p>
           <p className="home_text">
-            I architect performant, accessible frontends with semantic HTML5,
-            modern CSS (Flexbox, Grid, animations), and JavaScript, underpinned
-            by clean, scalable architecture principles. My primary JS library is
-            React + Vite for modular, production-grade UIs, integrated with
-            Redux for deterministic state management, Framer Motion for high-FPS
-            animations, React Hook Form for optimized form state handling,
-            EmailJS for transactional mail, and DOMPurify for XSS-safe HTML
-            sanitization. I implement robust API consumption via the Fetch API,
-            maintain disciplined Git workflows with feature branching, PR
-            reviews, and CI-friendly commits, and optimize delivery velocity
-            with Tailwind CSS. On the backend, I leverage Appwrite for
-            authentication, database operations, and serverless functions, and
-            integrate Stripe Checkout with webhook validation for secure,
-            scalable subscription management.
+            I architect scalable, <strong>full-stack applications</strong> and{" "}
+            <strong>distributed microservices</strong>, underpinned by strong CS
+            fundamentals (OOP, DSA) and multi-language proficiency
+            <strong> (TypeScript, JavaScriprt(ES6+), Java, Python)</strong>. On
+            the frontend, I engineer performant, SEO-optimized experiences using
+            <strong> React and Next.js</strong>, leveraging Redux for
+            deterministic state management, Three.js for immersive graphics, and
+            <strong> Tailwind CSS</strong> for accessible, pixel-perfect UIs. My
+            backend expertise centers on building secure
+            <strong> REST and GraphQL APIs with Node.js</strong>, managing
+            complex data via{" "}
+            <strong>
+              PostgreSQL, MongoDB, and Prisma ORM, and optimizing with Redis
+            </strong>
+            . Beyond CRUD, I design{" "}
+            <strong>real-time, event-driven systems</strong> using{" "}
+            <strong>
+              WebRTC, WebSockets, and RabbitMQ, containerized with Docker
+            </strong>
+            . I actively <strong>integrate AI features</strong> like real-time
+            transcription, and ensure production readiness by engineering{" "}
+            <strong>idempotent MoR payment gateways</strong> for automated
+            subscription lifecycles.
           </p>
           <div className="home_socials">
             <a

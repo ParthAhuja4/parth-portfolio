@@ -1,0 +1,191 @@
+.experience__container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* SINGLE EXPERIENCE LAYOUT */
+.experience__single {
+  display: flex;
+  justify-content: center;
+}
+
+.single-item {
+  width: 100%;
+  margin-top: 10px;
+  max-width: 600px; /* Constrained width so it doesn't stretch too far */
+}
+
+/* TIMELINE LAYOUT */
+.experience__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* Timeline vertical line */
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 40px; /* Starts below the dot */
+  left: -5px; /* Adjust based on dot position */
+  width: 2px;
+  height: calc(100% + 2rem - 20px);
+  background-color: var(--text-color-light, #a3a3a3);
+  opacity: 0.3;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--title-color, #333333);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--body-color, #ffffff);
+}
+
+body.dark-theme .timeline-dot {
+  box-shadow: 0 0 0 4px var(--body-color, #222222); /* Dark theme shadow color fallback */
+}
+
+/* CARD STYLING */
+.experience__card {
+  background-color: var(--container-color, #ffffff);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.experience__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .experience__card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.experience__header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--text-color-light, #a3a3a3);
+  padding-bottom: 1.25rem;
+}
+
+.experience__title {
+  font-size: var(--h3-font-size, 1.25rem);
+  color: var(--title-color, #333333);
+  margin-bottom: 0.25rem;
+}
+
+.experience__company {
+  display: block;
+  font-size: var(--normal-font-size, 1rem);
+  font-weight: 500;
+  color: var(--text-color, #666666);
+  margin-bottom: 0.5rem;
+}
+
+.experience__duration {
+  display: inline-block;
+  font-size: var(--small-font-size, 0.875rem);
+  color: var(--text-color-light, #a3a3a3);
+  background-color: var(--body-color, #f5f5f5);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+body.dark-theme .experience__duration {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.experience__responsibilities {
+  list-style: none;
+  margin-bottom: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__responsibility-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 0.75rem; /* Replaced margin-bottom to avoid height jump during animation */
+  font-size: var(--normal-font-size, 1rem);
+  color: var(--text-color, #666666);
+  line-height: 1.5;
+}
+
+.experience__icon {
+  color: var(--title-color, #333333);
+  font-size: 1.1rem;
+  margin-right: 0.75rem;
+}
+
+.experience__toggle-btn {
+  background: none;
+  border: none;
+  color: var(--title-color, #333333);
+  font-size: var(--small-font-size, 0.875rem);
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.experience__toggle-btn:hover {
+  color: var(--text-color-light, #a3a3a3);
+}
+
+.experience__tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience__tech-item {
+  font-size: var(--smaller-font-size, 0.75rem);
+  background-color: var(--title-color, #333333);
+  color: var(--container-color, #f0ebe3);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+/* =============== RESPONSIVENESS =============== */
+@media screen and (max-width: 576px) {
+  .experience__card {
+    padding: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .experience__timeline {
+    padding-left: 10px;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    left: -1px;
+  }
+
+  .timeline-dot {
+    left: -6px;
+  }
+}

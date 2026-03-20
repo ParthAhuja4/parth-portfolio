@@ -2,9 +2,7 @@
 
 A fully responsive, animated, and theme-aware **portfolio website** built with React — showcasing real-world frontend skills through component architecture, motion, and interactivity.
 
-
 ## Sections & Features
-
 
 ### 1. Home – Animated Intro
 
@@ -16,6 +14,7 @@ The hero section introduces with dynamic entrance animations and professional su
 - Semantic HTML with CSS variables and modular styling.
 - Linked social icons (GitHub, LinkedIn, Email).
 - Resume+ Scroll to Skills button.
+
 ---
 
 ### 2. Skills – Tech + Soft Skills Breakdown
@@ -28,6 +27,7 @@ Skills section displays technical competencies and skills with scroll-triggered 
 - Animated appearance using `react-intersection-observer` and Framer Motion.
 - Skills are with skewed motion transition.
 - External links to tech/tools provided.
+
 ---
 
 ### 3. Projects – Filterable Portfolio Grid
@@ -48,6 +48,7 @@ A dynamic and filterable project gallery that categorizes work based on tech sta
 Contact section with a real-time email form powered by EmailJS.
 
 ✨ Features:
+
 - EmailJS handles delivery.
 - Success/failure alerts + auto-reset after submit.
 - Additional contact options: Email, Phone, LinkedIn.
@@ -67,25 +68,24 @@ Reusable layout components that persist across the SPA and respond to theme and 
 
 ## Project Structure
 
-
 ```
 parth-portfolio/
 ├── src/
-│   ├── assets/                        
+│   ├── assets/
 │   │   └── ...                        # (Profile.png, shape-2.png, etc.)
 │   │
-│   ├── components/                    
-│   │   ├── Contact/  ...               
-│   │   ├── Footer/   ...                
-│   │   ├── Header/   ...              
-│   │   ├── Home/     ...            
-│   │   ├── Projects/ ...                
-│   │   └── Skills/   ...           
+│   ├── components/
+│   │   ├── Contact/  ...
+│   │   ├── Footer/   ...
+│   │   ├── Header/   ...
+│   │   ├── Home/     ...
+│   │   ├── Projects/ ...
+│   │   └── Skills/   ...
 │   │
-│   ├── App.css                        
-│   ├── App.jsx                        
-│   ├── Data.jsx                       
-│   └── main.jsx                       
+│   ├── App.css
+│   ├── App.jsx
+│   ├── Data.jsx
+│   └── main.jsx
 │
 └── index.html
 
@@ -106,7 +106,7 @@ npm run dev
 
 Runs on `http://localhost:5173` by default.
 
-----------
+---
 
 ## What This Demonstrates
 
@@ -118,16 +118,13 @@ Runs on `http://localhost:5173` by default.
 ✅ Fully functional frontend form integration (EmailJS)  
 ✅ Fully data-driven — all content customizable via a single `Data.jsx` file
 
-
-
 ## Tech Stack
+
 React, CSS, Framer Motion, EmailJS, React-Scroll
 
 ## Live Demo
 
-Link: [https://parth-portfolio-dusky.vercel.app/](https://parth-portfolio-dusky.vercel.app/)  
-
-
+Link: [https://parth-portfolio-dusky.vercel.app/](https://parth-portfolio-dusky.vercel.app/)
 
 ## Contact
 

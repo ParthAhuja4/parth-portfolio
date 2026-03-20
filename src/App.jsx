@@ -5,12 +5,14 @@ import Projects from "./components/Projects/Projects.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
+import Experience from "./components/Experience/Experience.jsx";
 function App() {
   return (
     <main className="main">
       <Header />
       <Home />
       <Skills />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

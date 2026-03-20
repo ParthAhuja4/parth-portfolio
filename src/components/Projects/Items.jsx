@@ -22,7 +22,7 @@ function Items({ projectItems }) {
                 <img
                   src={img}
                   alt={title}
-                  className={`portfolio_img ${title === "Campus AI" ? "cmps" : ""}`}
+                  className={`portfolio_img ${title === "Campus AI" || title === "Meetly - AI Conferencing SaaS" || title === "Ads Analysis & Scheduling Tool" || title === "Kove- Scalable Messaging App" ? "cmps" : ""}`}
                 />
               </div>
               <span className="portfolio_category text-cs">{category}</span>

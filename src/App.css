@@ -6,7 +6,7 @@
   --text-color: hsl(0, 0%, 92%);
   --bg-color: hsl(216, 18%, 16%);
   --bg-color-alt: hsl(213, 10%, 21%);
-  --container-color: hsl(217, 18%, 14%);
+  --container-color: hsl(214, 21%, 22%);
   --border-color: hsl(210, 2%, 65%);
   --first-gradient: linear-gradient(
     0deg,
@@ -154,7 +154,7 @@ img {
 }
 
 .section {
-  padding-bottom: 220px;
+  padding-bottom: 100px;
 }
 
 .section_title,
